@@ -1,0 +1,70 @@
+.appointments {
+  padding: 20px;
+}
+
+.appointments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.appointment-card {
+  padding: 20px;
+}
+
+.appointment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.appointment-header h3 {
+  margin: 0;
+  color: #333;
+}
+
+.appointment-date {
+  color: #666;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.status-badge {
+  padding: 5px 15px;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.appointment-section {
+  margin-bottom: 15px;
+}
+
+.appointment-section strong {
+  display: block;
+  color: #667eea;
+  margin-bottom: 5px;
+}
+
+.appointment-section p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.appointment-actions {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.doctor-actions {
+  display: flex;
+  gap: 10px;
+}
+

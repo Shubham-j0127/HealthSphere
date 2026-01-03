@@ -1,0 +1,11 @@
+package com.healthsphere.model;
+
+public enum NotificationType {
+    APPOINTMENT_REMINDER,
+    APPOINTMENT_CONFIRMED,
+    APPOINTMENT_CANCELLED,
+    PRESCRIPTION_CREATED,
+    MEDICAL_RECORD_UPDATED,
+    SYSTEM_NOTIFICATION
+}
+

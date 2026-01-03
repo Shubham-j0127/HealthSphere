@@ -1,0 +1,96 @@
+.telemedicine {
+  padding: 20px;
+}
+
+.video-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.video-section {
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  min-height: 400px;
+}
+
+.video-section h3 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 10;
+  font-size: 14px;
+}
+
+.video-element {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 400px;
+}
+
+.video-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+.partner-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.status-indicator {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.status-badge {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.status-idle {
+  background-color: #6c757d;
+  color: white;
+}
+
+.status-waiting_for_offer,
+.status-waiting_for_answer {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.status-connected {
+  background-color: #28a745;
+  color: white;
+}
+
+.status-disconnected {
+  background-color: #dc3545;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    grid-template-columns: 1fr;
+  }
+}
+
