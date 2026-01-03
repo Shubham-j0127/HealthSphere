@@ -1,16 +1,16 @@
 FROM eclipse-temurin:17-jdk-alpine
 
+# Install Maven
+RUN apk add --no-cache maven
+
 WORKDIR /app
 
-# Copy backend files explicitly
-COPY backend/mvnw .
-COPY backend/.mvn .mvn
+# Copy backend project files
 COPY backend/pom.xml .
 COPY backend/src src
 
-RUN chmod +x mvnw && ./mvnw dependency:go-offline
-
-RUN ./mvnw clean package -DskipTests
+# Build the application
+RUN mvn clean package -DskipTests
 
 EXPOSE 8080
 
