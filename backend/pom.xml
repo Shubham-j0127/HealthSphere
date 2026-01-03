@@ -14,7 +14,7 @@
     <artifactId>healthsphere-backend</artifactId>
     <version>1.0.0</version>
     <name>HealthSphere Backend</name>
-    <description>EHR &amp Telemedicine Platform Backend</description>
+    <description>EHR &amp; Telemedicine Platform Backend</description>
     
     <properties>
         <java.version>17</java.version>
@@ -80,4 +80,3 @@
         </plugins>
     </build>
 </project>
-
